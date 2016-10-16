@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash, redirect
 from flask_debugtoolbar import DebugToolbarExtension
 
 
@@ -34,11 +34,12 @@ def application_info():
     salary = request.form.get("salary")
     job_type = request.form.get("jobtype")
 
-    return render_template("application-response.html",
+    return render_template("/application-response.html",
                             first_name=first_name,
                             last_name=last_name,
                             salary=salary,
                             job_type=job_type)
+    
 
 if __name__ == "__main__":
     # We have to set debug=True here, since it has to be True at the

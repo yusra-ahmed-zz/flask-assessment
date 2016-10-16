@@ -1,5 +1,5 @@
 form input {
-    background-color: yellow;
+    background-color: #f9ef61;
 }
 
 #lastname {
@@ -16,12 +16,11 @@ form input {
 }
 
 #maillogo {
-    width: 12%;
+    width: 10%;
 }
 
 input[type="submit"] {
    width: 10%;
    line-height: 200%;
    padding: 5px;
-
 }
