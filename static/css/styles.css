@@ -1,0 +1,27 @@
+form input {
+    background-color: yellow;
+}
+
+#lastname {
+    font-weight: bold;
+}
+
+#explanation {
+    border: 1px solid red;
+    padding: 5px;
+}
+
+#logo {
+    width: 40%;
+}
+
+#maillogo {
+    width: 12%;
+}
+
+input[type="submit"] {
+   width: 10%;
+   line-height: 200%;
+   padding: 5px;
+
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<title>
+    {% block title %}
+        Title Goes Here
+    {% endblock %}
+</title>
+
+<body>
+    <img id="logo" src="/static/img/logo.png">
+
+    {% block body %}
+        Body Goes Here
+    {% endblock %}
+    
+</body>
+</html>

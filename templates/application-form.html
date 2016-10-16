@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Application Form{% endblock %}
+
+
+{% block body %}
+    
+    <h1>Application Form</h1>
+    
+    <h4 id="explanation">Please complete the application form below to be 
+            considered for a position at LucyandCo.</h4><br>
+        
+        <form action="/application" method="POST">
+            
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname"><br>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" min="1" id="lastname"><br>
+
+            <label for="salary">Please provide your minimum salary
+            requirement:</label>             
+            <input type="number" name="salary" id="salary"><br>            
+
+            <label for="jobtype">Specify the position for which you're 
+            applying (select one per application):</label>
+            <select name="jobtype" id="jobtype">
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+            </select><br>
+
+            <br>
+            <img id="maillogo" src="/static/img/lucyandco.svg">
+            <input type="submit">
+                 
+        </form>
+
+{% endblock %}
+
